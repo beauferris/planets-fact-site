@@ -1,4 +1,5 @@
 {
+  "homepage": "http://beauferris.github.io/planets-fact-site",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -36,6 +37,7 @@
     ]
   },
   "devDependencies": {
-    "file-loader": "^6.2.0"
+    "file-loader": "^6.2.0",
+    "gh-pages": "^3.2.1"
   }
 }
