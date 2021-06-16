@@ -1,0 +1,87 @@
+.info{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 150px 48px 48px 48px;
+    row-gap: 25px;
+    grid-area: stats;
+  
+}
+
+.middle{
+    grid-area: info;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+    grid-template-areas: 
+    "img stats";
+    column-gap: 100px;
+
+}
+
+.title{
+    font-family: Antonio;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 104px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    min-width: 350px;
+}
+
+.summary{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    /* or 179% */
+    color: #FFFFFF;
+    max-width: 350px;
+
+}
+
+.info button{
+    width: 350px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 2.57143px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 1px solid rgba(255,255, 255, .5);
+    box-sizing: border-box;
+    justify-items: end;
+    background-color: Transparent;
+}
+
+.info button:hover{
+    background-color: rgba(255,255, 255, .3);
+   
+}
+
+.info button:focus{
+    background-color: blue;
+}
+
+.planet-img{
+    grid-area: img;
+    align-self: center;
+    justify-self: end;
+    position: relative;
+}
+
+.zoom {
+    position: absolute;
+    width: 163px;
+    height: 199px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+

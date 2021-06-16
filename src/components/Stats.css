@@ -1,0 +1,40 @@
+.stats{
+    grid-area: data;
+    display: grid;
+    grid-template-columns: 255px 255px 255px 255px;
+    align-items: center;
+    justify-self: center;
+    gap: 20px;
+}
+
+.data_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 25px;
+    /* identical to box height, or 227% */
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+
+.main-info {
+    font-family: 'Antonio', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 52px;
+    /* identical to box height */
+
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    
+}
