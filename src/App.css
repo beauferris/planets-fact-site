@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=Spartan&display=swap');
+
+.body{
+  font-family: 'Spartan', sans-serif;
+  background-color: #070724;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 2fr 128px;
+    grid-template-areas: 
+    "header header"
+    "info info"
+    "data data";
+    row-gap: 100px;
+}

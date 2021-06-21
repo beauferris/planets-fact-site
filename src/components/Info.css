@@ -1,7 +1,9 @@
 .info{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 150px 48px 48px 48px;
+    grid-template-rows: 1fr 150px 1fr;
+    grid-template-areas:"title"
+    "summary"
+    "buttons";
     row-gap: 25px;
     grid-area: stats;
   
@@ -19,6 +21,7 @@
 }
 
 .title{
+    grid-area: title;
     font-family: Antonio;
     font-style: normal;
     font-weight: normal;
@@ -33,6 +36,8 @@
 }
 
 .summary{
+    grid-area: summary;
+
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -43,8 +48,16 @@
 
 }
 
+.buttons{
+    grid-area: buttons;
+    display: grid;
+    row-gap: 8px;
+    max-width: 350px;
+}
+
 .info button{
     width: 350px;
+    height: 48px;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -85,3 +98,37 @@
 }
 
 
+@media (max-width: 768px){
+    .info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        grid-template-areas: 
+        "title title"
+        "summary buttons";
+        row-gap: 25px;
+        grid-area: stats;
+    }
+
+
+    .middle{
+        grid-area: info;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px;
+        grid-template-areas:
+        "img" 
+        "stats";
+        column-gap: 100px;
+        margin: 10px 10px;
+
+    }
+
+    .planet-img{
+        grid-area: img;
+        align-self: center;
+        justify-self: center;
+        position: relative;
+    }
+
+}

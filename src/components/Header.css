@@ -1,11 +1,16 @@
 header{
     grid-area: header;
     display: grid;
-    grid-template-columns: 1fr 100px 100px 100px 100px 100px 100px 100px 100px; 
-    margin: 10px 120px;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "home buttons";
+    
 }
 
+
 header button{
+    
     font-family: 'Spartan', sans-serif;
     font-weight: bold;
     font-size: 11px;
@@ -17,13 +22,49 @@ header button{
     justify-self: end;
     border: none;
     align-self: center;  
-    
+    margin: 10px 10px;
 }
 
+
+.buttonh{
+    grid-row: buttons;
+    display: grid;
+    grid-template-columns: repeat(8,100px);
+
+}
 
 
 .home{
     font-family: 'Antonio', sans-serif;
     justify-self: start;
     font-size: 28px;
+    grid-area: home;
 }
+
+@media (max-width: 768px){
+    header{
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "home "
+        "buttons";
+    }
+
+    .home{
+        font-family: 'Antonio', sans-serif;
+        justify-self:center;
+        font-size: 28px;
+    }
+
+    .buttonh{
+        grid-row: buttons;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+       
+
+    }
+    
+}
+

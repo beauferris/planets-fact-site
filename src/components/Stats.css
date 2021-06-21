@@ -2,6 +2,7 @@
     grid-area: data;
     display: grid;
     grid-template-columns: 255px 255px 255px 255px;
+    grid-template-rows: 128px;
     align-items: center;
     justify-self: center;
     gap: 20px;
@@ -37,4 +38,14 @@
 
     color: #FFFFFF;
     
+}
+@media (max-width: 768px){
+    .stats{
+        grid-area: data;
+        display: grid;
+        grid-template-columns: 155px 155px 155px 155px;
+        align-items: center;
+        justify-self: center;
+        column-gap: 35px;
+    }
 }
